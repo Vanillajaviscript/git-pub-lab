@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to GitPub</title>
+</head>
+<body>
+    
+    <h1 class="main-title">GitPub Menu</h1>
+    <ul class="list-container">
+        <% for(let drink in allDrinks) { %>
+        <li>
+          <a href="/drinks/<%=drink%>"><%= allDrinks[drink].name %></a>
+
+          <p src="/drinks/<%=drink%>">Price: <%=`$${allDrinks[drink].price}`%></p>
+
+          <img src=<%=allDrinks[drink].image%>>
+        </li>
+        <% } %>
+      </ul>
+</body>
+</html>
