@@ -14,13 +14,24 @@
           ul {
               list-style: none;
           }
+          a  {
+            display: block;
+            width: 100%;
+            border: none;
+            background-color: #1a4cc960;
+            border-radius: 20px;
+            padding: 14px 28px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+          }
           </style>
 </head>
 <body>
     <div>
-        <p href="/drinks/:id<%=drink%>">Price: $<%=drink.price%></p>
+        <p href="/drinks/:id<%=drink%>"><h2>Price: $<%=drink.price%></h2></p>
         <img src='<%=`${drink.image.slice(0,-3)}png`%>'>
-        <button href="drinks_index.ejs">Return</button>
+        <a href="/drinks/"><h2>Return</h2></a>
     </div>
 </body>
 </html>
