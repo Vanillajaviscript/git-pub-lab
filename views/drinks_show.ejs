@@ -36,6 +36,7 @@
 </head>
 <body>
     <div>
+        <p href="/drinks/:id<%=drink%>"><h1><%=drink.name.toUpperCase()%></h1></p>
         <p href="/drinks/:id<%=drink%>"><h2>Price: $<%=drink.price%></h2></p>
         <img src='<%=`${drink.image.slice(0,-3)}png`%>'>
         <a href="/drinks/"><h2>Return</h2></a>
