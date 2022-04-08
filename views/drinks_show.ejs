@@ -19,8 +19,8 @@
 <body>
     <div>
         <p href="/drinks/:id<%=drink%>">Price: $<%=drink.price%></p>
-        <img src=<%=drink.image%>>
-         
+        <img src='<%=`${drink.image.slice(0,-3)}png`%>'>
+        <button href="drinks_index.ejs">Return</button>
     </div>
 </body>
 </html>
