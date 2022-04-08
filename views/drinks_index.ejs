@@ -19,6 +19,13 @@
             background-color: rgba(207, 213, 228, 0.761);
             border-radius: 30px;
         }
+        a {
+          text-decoration: none;
+          color: rgba(107, 76, 9, 0.953);
+        }
+        h1 {
+          font-size: 40px;
+        }
         </style>
 </head>
 <body>
@@ -27,7 +34,7 @@
     <ul class="list-container">
         <% for(let drink in allDrinks) { %>       
         <li>
-          <a href="/drinks/<%=drink%>"><%= allDrinks[drink].name.toUpperCase() %></a>
+          <a href="/drinks/<%=drink%>"><h3><%= allDrinks[drink].name.toUpperCase() %></h3></a>
         </li>
         <% } %>
       </ul>
